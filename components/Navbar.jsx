@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 import { logoImages } from '../lib/images'
 
 const PHONE = '9718344024'
@@ -53,10 +54,19 @@ const Navbar = ({ setIsOpen }) => {
 
           {/* Logo */}
           <a href="#" className="flex items-center shrink-0">
-            <img
+            <Image
               src={logoImages.main}
-              alt="Vertex 33"
-              style={{ height: isMobile ? '60px' : 'clamp(48px, 8vw, 72px)', width: 'auto', objectFit: 'contain', maxWidth: '260px' }}
+              alt="Godrej Properties Sarjapur Road"
+              width={400}
+              height={150}
+              priority
+              quality={100}
+              style={{
+                height: isMobile ? '72px' : 'clamp(64px, 9vw, 90px)',
+                width: 'auto',
+                objectFit: 'contain',
+                maxWidth: '300px',
+              }}
             />
           </a>
 
