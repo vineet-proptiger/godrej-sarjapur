@@ -8,58 +8,45 @@ const categories = [
   {
     title: "Schools",
     items: [
-      { name: "Greenwood High", dist: "5 mins" },
-      { name: "Oakridge International", dist: "10 mins" },
-      { name: "Indus International", dist: "15 mins" },
-      { name: "The International School Bangalore (TISB)", dist: "15 mins" },
-      { name: "Silver Oaks International", dist: "15 mins" },
-      { name: "Inventure Academy", dist: "20 mins" },
-      { name: "Delhi Public School", dist: "20 mins" },
+      { name: "TISB (The International School Bangalore)", dist: "10 mins" },
+      { name: "Candor International School", dist: "15 mins" },
+      { name: "Oakridge International School", dist: "12 mins" },
     ],
   },
   {
     title: "Entertainment & Shopping",
     items: [
-      { name: "Decathlon Sarjapur", dist: "5 mins" },
-      { name: "Market Square Mall", dist: "15 mins" },
-      { name: "The Forum Neighbourhood Mall", dist: "25 mins" },
-      { name: "Nexus Shantiniketan Mall", dist: "30 mins" },
-      { name: "Phoenix Marketcity", dist: "35 mins" },
-      { name: "VR Bengaluru", dist: "35 mins" },
+      { name: "Elements Mall", dist: "15 mins" },
+      { name: "Rasta Cafe", dist: "10 mins" },
+      { name: "Sarjapur Market", dist: "05 mins" },
     ],
   },
   {
     title: "Hospitals",
     items: [
-      { name: "Motherhood Hospital", dist: "10 mins" },
-      { name: "Columbia Asia Hospital", dist: "15 mins" },
-      { name: "Sakra World Hospital", dist: "20 mins" },
-      { name: "Manipal Hospital", dist: "25 mins" },
-      { name: "St. John's Medical College Hospital", dist: "30 mins" },
+      { name: "Manipal Hospital (Sarjapur)", dist: "10 mins" },
+      { name: "Apollo Spectra Hospital", dist: "12 mins" },
+      { name: "Cloudnine Hospital", dist: "15 mins" },
     ],
   },
   {
     title: "Workplaces",
     items: [
-      { name: "Wipro SEZ", dist: "5 mins" },
-      { name: "RGA Tech Park", dist: "5 mins" },
-      { name: "Prestige Tech Park", dist: "20 mins" },
-      { name: "RMZ Ecospace/Ecoworld", dist: "20 mins" },
-      { name: "Cessna Business Park", dist: "25 mins" },
-      { name: "Electronic City IT Hub", dist: "30 mins" },
+      { name: "Salarpuria Tech Park", dist: "10 mins" },
+      { name: "Wipro Campus", dist: "15 mins" },
+      { name: "RGA Tech Park", dist: "12 mins" },
     ],
   },
   {
     title: "Connectivity",
     items: [
-      { name: "Carmelaram Railway Station", dist: "10 mins" },
-      { name: "Outer Ring Road (ORR)", dist: "15 mins" },
-      { name: "HSR Layout", dist: "20 mins" },
-      { name: "Marathahalli", dist: "25 mins" },
-      { name: "Koramangala", dist: "30 mins" },
+      { name: "NICE Road", dist: "20 mins" },
+      { name: "Hosur Road (NH-44)", dist: "15 mins" },
+      { name: "Silk Board Junction", dist: "25 mins" },
     ],
   },
 ]
+
 
 const Location = () => {
   const [open, setOpen] = useState(0)
