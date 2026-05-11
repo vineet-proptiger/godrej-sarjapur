@@ -33,7 +33,7 @@ const Hero = ({ setIsOpen }) => {
       <div style={{
         position: 'relative',
         width: '100%',
-        aspectRatio: isMobile ? '2520 / 1440' : '21 / 9',
+        aspectRatio: isMobile ? '1 / 1' : '21 / 9',
         overflow: 'hidden',
       }}>
         {/* Background carousel */}
