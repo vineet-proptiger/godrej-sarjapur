@@ -72,10 +72,10 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Center-bottom text */}
         <div
-          className={!isMobile ? 'bottom-[210px] sm:bottom-[120px]' : ''}
+          className={!isMobile ? 'bottom-[200px] sm:bottom-[130px]' : ''}
           style={{
             position: 'absolute', left: 0, right: 0,
-            ...(isMobile && { bottom: '10px' }),
+            ...(isMobile && { bottom: '18px' }),
             zIndex: 2, textAlign: 'center', padding: '0 16px',
           }}
         >
@@ -96,7 +96,7 @@ const Hero = ({ setIsOpen }) => {
               backdropFilter: 'blur(10px)',
               boxShadow: '0 4px 20px rgba(0,0,0,0.4)'
             }}>
-              Sarjapur Road, Bangalore
+              Pre-launch,Project in Bangalore
             </span>
           </div>
 
@@ -110,7 +110,7 @@ const Hero = ({ setIsOpen }) => {
             textTransform: 'uppercase',
             textShadow: '0 2px 20px rgba(0,0,0,0.5)',
           }}>
-            GODREJ SARJAPUR
+            GODREJ SARJAPUR ROAD
           </h1>
 
           {/* Location & Phone */}
@@ -132,7 +132,7 @@ const Hero = ({ setIsOpen }) => {
                 fontSize: isMobile ? '10px' : 'clamp(13px, 1.2vw, 15px)',
                 color: '#ffffff', fontWeight: '600', letterSpacing: '0.04em', textTransform: 'uppercase',
               }}>
-                Sarjapur Road, Bangalore
+                Sarjapur, Bangalore
               </span>
             </div>
 
@@ -213,18 +213,30 @@ const Hero = ({ setIsOpen }) => {
           maxWidth: '1200px',
         }}>
           {[
-            'New Launch',
-            '2 & 3 BHK Luxury Apartments',
-            '₹1.5 Cr* Onwards',
-          ].map((text, i) => (
+            { label: 'Status', text: 'New Launch' },
+            { label: 'Configurations', text: '2 & 3 BHK Apt.' },
+            { label: 'Price', text: '₹ 1.5 Cr*' },
+          ].map(({ label, text }, i) => (
             <div
               key={i}
               style={{
                 textAlign: 'center',
-                padding: isMobile ? '10px 8px' : '14px 12px',
+                padding: isMobile ? '8px 8px' : '12px 12px',
                 borderRight: i < 2 ? '1px solid rgba(255,255,255,0.1)' : 'none',
               }}
             >
+              <span style={{
+                display: 'block',
+                fontFamily: F_SANS,
+                fontSize: 'clamp(8px, 1vw, 11px)',
+                fontWeight: '600',
+                color: 'var(--color-gold)',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                marginBottom: '3px',
+              }}>
+                {label}
+              </span>
               <span style={{
                 fontFamily: F_JOST,
                 fontSize: 'clamp(10px, 1.8vw, 16px)',

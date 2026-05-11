@@ -14,9 +14,9 @@ const highlights = [
   { title: "5 Lifts Per Tower", sub: "4 Passenger + 1 Service lift" },
   { title: "18,500 Sq.ft Club House", sub: "Grand clubhouse with top amenities" },
   { title: "80% Open Space", sub: "Lush greens & breathing room" },
-  { title: "East & West Facing", sub: "All units perfectly oriented" },
+  // { title: "East & West Facing", sub: "All units perfectly oriented" },
   { title: "7.9 Acre Land Parcel", sub: "Expansive gated community" },
-  { title: "2031 RERA Possession", sub: "Timely delivery as per RERA" },
+  // { title: "2031 RERA Possession", sub: "Timely delivery as per RERA" },
 ]
 
 const Highlights = ({ setIsOpen }) => (
@@ -83,9 +83,15 @@ const Highlights = ({ setIsOpen }) => (
             >
               <p style={{
                 fontFamily: F_JOST, fontWeight: "700", fontSize: "14px",
-                color: "#ffffff", margin: 0, letterSpacing: "0.02em",
+                color: "#ffffff", margin: "0 0 4px", letterSpacing: "0.02em",
               }}>
                 {h.title}
+              </p>
+              <p style={{
+                fontFamily: F_SANS, fontWeight: "400", fontSize: "11px",
+                color: "#aaaaaa", margin: 0, letterSpacing: "0.01em",
+              }}>
+                {h.sub}
               </p>
             </div>
           ))}

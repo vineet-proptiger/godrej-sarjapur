@@ -5,9 +5,9 @@ const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const rows = [
-  { type: '2 BHK Apartments', size: '1,200 Sq.Ft (Approx)', price: '₹1.50 Cr* Onwards' },
-  { type: '3 BHK Apartments (3B 2T)', size: '1,500 Sq.Ft (Approx)', price: '₹1.88 Cr* Onwards' },
-  { type: '3 BHK Apartments (3B 3T)', size: '1,800 Sq.Ft (Approx)', price: '₹2.25 Cr* Onwards' },
+  { type: '2 BHK Apartments', size: '1,200 Sq.Ft (Approx)', price: '₹1.5 Cr* Onwards' },
+  { type: '3 BHK + 2T', size: '1,500 Sq.Ft (Approx)', price: 'Ask For Price' },
+  { type: '3 BHK + Study', size: '1,800 Sq.Ft (Approx)', price: 'Ask For Price' },
 ]
 
 const Pricing = ({ setIsOpen }) => (

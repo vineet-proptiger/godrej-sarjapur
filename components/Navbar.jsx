@@ -49,14 +49,14 @@ const Navbar = ({ setIsOpen }) => {
       }}
     >
       <div className="container mx-auto px-4 md:px-8">
-        <div className="flex items-center justify-between h-[88px]">
+        <div className="flex items-center justify-between h-[70px] lg:h-[88px]">
 
           {/* Logo */}
           <a href="#" className="flex items-center shrink-0">
             <img
               src={logoImages.main}
               alt="Vertex 33"
-              style={{ height: 'clamp(48px, 8vw, 72px)', width: 'auto', objectFit: 'contain', maxWidth: '260px' }}
+              style={{ height: isMobile ? '60px' : 'clamp(48px, 8vw, 72px)', width: 'auto', objectFit: 'contain', maxWidth: '260px' }}
             />
           </a>
 

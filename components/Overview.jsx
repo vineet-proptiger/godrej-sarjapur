@@ -137,7 +137,7 @@ const Overview = () => (
             fontFamily: F_SANS, fontSize: '14.5px', color: '#444444',
             lineHeight: 1.9, margin: '0 0 32px', textAlign: 'justify',
           }}>
-            Godrej Sarjapur is a prestigious residential development by Godrej Properties, nestled on Sarjapur Road — Bangalore&apos;s fastest-growing real estate corridor. Spread across 7.9 acres with an impressive 80% open space, this landmark project offers 518 meticulously crafted homes across 2 iconic towers with a striking 3B+G+33 elevation.
+            Godrej Sarjapur Road is a prestigious residential development by Godrej Properties, nestled on Sarjapur Road — Bangalore&apos;s fastest-growing real estate corridor. Spread across 7.9 acres with an impressive 80% open space, this landmark project offers 518 meticulously crafted homes across 2 iconic towers with a striking 3B+G+33 elevation.
             Choose from spacious 2 BHK (1,200 sq.ft), 3 BHK (1,500 sq.ft), and 3 BHK (1,800 sq.ft) configurations, all featuring only East and West facing units. With just 8 units per floor and 5 lifts per tower, residents enjoy unmatched privacy and seamless access.
             A grand 18,500 sq.ft Club House, premium specifications throughout, and Godrej&apos;s hallmark build quality make this an address you&apos;ll be proud to call home. Possession expected in 2031 as per RERA.
             Ideally located minutes from top IT parks, premier schools, hospitals, and lifestyle hubs, Godrej Sarjapur offers the perfect blend of connected city living and serene open spaces.
