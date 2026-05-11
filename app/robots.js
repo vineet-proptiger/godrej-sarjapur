@@ -6,6 +6,6 @@ export default function robots() {
         allow: '/',
       },
     ],
-    sitemap: 'https://ramkyclubclass.in/sitemap.xml',
+    sitemap: 'http://godrejnewlaunchsarjapurroad.in/sitemap.xml',
   }
 }

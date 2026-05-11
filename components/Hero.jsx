@@ -6,11 +6,14 @@ import { heroImages } from '../lib/images'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
-const slides = [heroImages.banner, heroImages.banner2]
+const desktopSlides = [heroImages.banner, heroImages.banner2]
+const mobileSlides = [heroImages.mob1, heroImages.mob2]
 
 const Hero = ({ setIsOpen }) => {
   const [current, setCurrent] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
+
+  const slides = isMobile ? mobileSlides : desktopSlides
 
   useEffect(() => {
     const t = setInterval(() => setCurrent(p => (p + 1) % slides.length), 5000)
@@ -64,10 +67,11 @@ const Hero = ({ setIsOpen }) => {
           </div>
         ))}
 
-        {/* Dark gradient overlay */}
+
+        {/* Light dark overlay for readability */}
         <div style={{
           position: 'absolute', inset: 0, zIndex: 1,
-          background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0) 100%)',
+          background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0) 55%)',
         }} />
 
         {/* Center-bottom text */}

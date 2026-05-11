@@ -1,4 +1,4 @@
-const BASE_URL = 'https://ramkyclubclass.in'
+const BASE_URL = 'http://godrejnewlaunchsarjapurroad.in'
 
 export default function sitemap() {
   return [
