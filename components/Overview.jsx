@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
@@ -11,7 +11,7 @@ const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 
 const stats = [
   { value: 'P02400006931', label: 'RERA No.' },
-  { value: 'Nallagandla', label: 'Location' },
+  { value: 'Sarjapur Road', label: 'Location' },
   { value: '80% Done', label: 'Construction' },
   { value: '2.5 & 3 BHK', label: 'Configurations' },
   { value: '₹8,299/sq.ft', label: 'Current Rate' },

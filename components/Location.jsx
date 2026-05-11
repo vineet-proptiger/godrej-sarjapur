@@ -8,57 +8,55 @@ const categories = [
   {
     title: "Schools",
     items: [
-      { name: "Sancta Maria", dist: "5 mins" },
-      { name: "Euro Kids", dist: "5 mins" },
-      { name: "Narayana", dist: "5 mins" },
-      { name: "Chirec", dist: "15 mins" },
-      { name: "IIIT", dist: "15 mins" },
-      { name: "Gaudium School", dist: "15 mins" },
-      { name: "ISB", dist: "20 mins" },
-      { name: "Meru International", dist: "20 mins" },
+      { name: "Greenwood High", dist: "5 mins" },
+      { name: "Oakridge International", dist: "10 mins" },
+      { name: "Indus International", dist: "15 mins" },
+      { name: "The International School Bangalore (TISB)", dist: "15 mins" },
+      { name: "Silver Oaks International", dist: "15 mins" },
+      { name: "Inventure Academy", dist: "20 mins" },
+      { name: "Delhi Public School", dist: "20 mins" },
     ],
   },
   {
     title: "Entertainment & Shopping",
     items: [
-      { name: "Aparna Mall", dist: "5 mins" },
-      { name: "GSM Mall", dist: "10 mins" },
-      { name: "SLN Terminus", dist: "15 mins" },
-      { name: "Sarath City Mall", dist: "20 mins" },
-      { name: "IKEA", dist: "20 mins" },
-      { name: "Inorbit Mall", dist: "30 mins" },
-      { name: "Forum Mall", dist: "30 mins" },
+      { name: "Decathlon Sarjapur", dist: "5 mins" },
+      { name: "Market Square Mall", dist: "15 mins" },
+      { name: "The Forum Neighbourhood Mall", dist: "25 mins" },
+      { name: "Nexus Shantiniketan Mall", dist: "30 mins" },
+      { name: "Phoenix Marketcity", dist: "35 mins" },
+      { name: "VR Bengaluru", dist: "35 mins" },
     ],
   },
   {
     title: "Hospitals",
     items: [
-      { name: "Citizens Specialty", dist: "5 mins" },
-      { name: "PRK Hospitals", dist: "15 mins" },
-      { name: "AIG", dist: "25 mins" },
-      { name: "Care", dist: "25 mins" },
-      { name: "KIMS", dist: "25 mins" },
-      { name: "Continental Hospitals", dist: "25 mins" },
-      { name: "Yashoda", dist: "30 mins" },
+      { name: "Motherhood Hospital", dist: "10 mins" },
+      { name: "Columbia Asia Hospital", dist: "15 mins" },
+      { name: "Sakra World Hospital", dist: "20 mins" },
+      { name: "Manipal Hospital", dist: "25 mins" },
+      { name: "St. John's Medical College Hospital", dist: "30 mins" },
     ],
   },
   {
     title: "Workplaces",
     items: [
-      { name: "TCS", dist: "20 mins" },
-      { name: "DLF", dist: "20 mins" },
-      { name: "Financial District", dist: "25 mins" },
-      { name: "Wipro", dist: "25 mins" },
-      { name: "Mindspace", dist: "25 mins" },
+      { name: "Wipro SEZ", dist: "5 mins" },
+      { name: "RGA Tech Park", dist: "5 mins" },
+      { name: "Prestige Tech Park", dist: "20 mins" },
+      { name: "RMZ Ecospace/Ecoworld", dist: "20 mins" },
+      { name: "Cessna Business Park", dist: "25 mins" },
+      { name: "Electronic City IT Hub", dist: "30 mins" },
     ],
   },
   {
     title: "Connectivity",
     items: [
-      { name: "Lingampally", dist: "5 mins" },
-      { name: "Outer Ring Road", dist: "10 mins" },
-      { name: "Miyapur Metro", dist: "30 mins" },
-      { name: "Airport", dist: "45 mins" },
+      { name: "Carmelaram Railway Station", dist: "10 mins" },
+      { name: "Outer Ring Road (ORR)", dist: "15 mins" },
+      { name: "HSR Layout", dist: "20 mins" },
+      { name: "Marathahalli", dist: "25 mins" },
+      { name: "Koramangala", dist: "30 mins" },
     ],
   },
 ]
@@ -171,7 +169,7 @@ const Location = () => {
               position: "relative",
             }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.629444980571!2d78.3120318!3d17.4798601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93e09d405b83%3A0x19b7962c94c1c6a9!2sVertex%2033%20West!5e1!3m2!1sen!2sin!4v1778231963750!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12824.298182427116!2d77.78892105!3d12.8539625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae72e11fe62b7f%3A0x90fb58b42c41430f!2sSarjapura%2C%20Bengaluru%2C%20Karnataka%20562125!5e1!3m2!1sen!2sin!4v1778475904951!5m2!1sen!2sin"
                 width="100%" height="100%"
                 style={{ border: 0, minHeight: "420px", display: "block", filter: "grayscale(20%)" }}
                 allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -L -o \"C:/Users/HP/Downloads/OllamaSetup.exe\" \"https://ollama.com/download/OllamaSetup.exe\")",
+      "Read(//c/Users/HP/Downloads/**)",
+      "PowerShell(Start-Process -FilePath \"C:\\\\Users\\\\HP\\\\Downloads\\\\OllamaSetup.exe\" -ArgumentList \"/S\" -Wait -PassThru)",
+      "Bash(pkill -f \"curl.*OllamaSetup\")",
+      "PowerShell($locked = $false; try { $stream = [System.IO.File]::Open\\(\"C:\\\\Users\\\\HP\\\\Downloads\\\\OllamaSetup.exe\", 'Open', 'Read', 'None'\\); $stream.Close\\(\\); $locked = $false } catch { $locked = $true }; Write-Output \"File locked: $locked\")",
+      "Bash(jobs -l)"
+    ]
+  }
+}
