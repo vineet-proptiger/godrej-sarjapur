@@ -27,19 +27,14 @@ const Hero = ({ setIsOpen }) => {
     <section
       id="home"
       className="relative w-full overflow-hidden"
-      style={{ height: isMobile ? 'auto' : '100svh' }}
+      style={{ height: 'auto' }}
     >
-      {/* ── Image + text wrapper ──
-          Mobile: relative, height = exact image AR (2520×1440 = 1.75:1) → no letterbox gaps
-          Desktop: absolute fill of the full-viewport section */}
-      <div style={isMobile ? {
+      {/* ── Image + text wrapper ── */}
+      <div style={{
         position: 'relative',
         width: '100%',
-        height: 'calc(100vw * 1440 / 2520)',
+        aspectRatio: isMobile ? '2520 / 1440' : '21 / 9',
         overflow: 'hidden',
-      } : {
-        position: 'absolute',
-        inset: 0,
       }}>
         {/* Background carousel */}
         {slides.map((src, idx) => (
@@ -58,11 +53,12 @@ const Hero = ({ setIsOpen }) => {
               fill
               style={{
                 objectFit: 'cover',
-                objectPosition: 'center center',
+                objectPosition: isMobile ? 'center center' : 'center 65%',
               }}
               priority={idx === 0}
               sizes="100vw"
               quality={100}
+              unoptimized
             />
           </div>
         ))}
@@ -74,42 +70,45 @@ const Hero = ({ setIsOpen }) => {
           background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0) 55%)',
         }} />
 
-        {/* Center-bottom text */}
+        {/* Badge only — positioned higher */}
+        <div style={{
+          position: 'absolute', left: 0, right: 0,
+          bottom: isMobile ? '70px' : '210px',
+          zIndex: 2, textAlign: 'center', padding: '0 16px',
+        }}>
+          <span style={{
+            background: 'rgba(0, 0, 0, 0.5)',
+            border: '1.5px solid var(--color-gold)',
+            padding: isMobile ? '4px 16px' : '7px 28px',
+            borderRadius: '50px',
+            color: 'var(--color-gold)',
+            fontFamily: F_JOST,
+            fontSize: isMobile ? '10px' : 'clamp(12px, 1.4vw, 15px)',
+            fontWeight: '800',
+            letterSpacing: '0.18em',
+            textTransform: 'uppercase',
+            display: 'inline-block',
+            backdropFilter: 'blur(10px)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.4)'
+          }}>
+            Pre-launch,Project in Bangalore
+          </span>
+        </div>
+
+        {/* Heading + Location + Phone */}
         <div
-          className={!isMobile ? 'bottom-[200px] sm:bottom-[130px]' : ''}
           style={{
             position: 'absolute', left: 0, right: 0,
-            ...(isMobile && { bottom: '18px' }),
+            bottom: isMobile ? '18px' : '80px',
             zIndex: 2, textAlign: 'center', padding: '0 16px',
           }}
         >
-          {/* Project Tagline */}
-          <div style={{ marginBottom: isMobile ? '6px' : '14px' }}>
-            <span style={{
-              background: 'rgba(0, 0, 0, 0.5)',
-              border: '1.5px solid var(--color-gold)',
-              padding: isMobile ? '4px 16px' : '7px 28px',
-              borderRadius: '50px',
-              color: 'var(--color-gold)',
-              fontFamily: F_JOST,
-              fontSize: isMobile ? '10px' : 'clamp(12px, 1.4vw, 15px)',
-              fontWeight: '800',
-              letterSpacing: '0.18em',
-              textTransform: 'uppercase',
-              display: 'inline-block',
-              backdropFilter: 'blur(10px)',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.4)'
-            }}>
-              Pre-launch,Project in Bangalore
-            </span>
-          </div>
-
           <h1 style={{
             fontFamily: F_JOST,
             fontSize: isMobile ? '18px' : 'clamp(20px, 3.2vw, 46px)',
             fontWeight: '800',
             color: '#ffffff',
-            margin: isMobile ? '0 0 4px' : '0 0 8px',
+            margin: isMobile ? '0 0 4px' : '0 0 6px',
             letterSpacing: '0.04em',
             textTransform: 'uppercase',
             textShadow: '0 2px 20px rgba(0,0,0,0.5)',
@@ -164,22 +163,13 @@ const Hero = ({ setIsOpen }) => {
       {/* ── Bottom info bar ──
           Mobile: relative, flows naturally right below the image wrapper (zero gap)
           Desktop: absolute, pinned to bottom of the full-viewport section */}
-      <div style={isMobile ? {
-        position: 'relative',
-        zIndex: 5,
-      } : {
-        position: 'absolute', bottom: 0,
-        left: 0, right: 0,
-        zIndex: 5,
-      }}>
+      <div style={{ position: 'relative', zIndex: 5 }}>
         {/* USP row */}
         <div style={{
           background: 'rgba(13,59,80,0.92)',
           backdropFilter: 'blur(8px)',
           display: 'grid', gridTemplateColumns: '1fr 1fr 1fr',
           borderTop: '1px solid rgba(var(--color-gold-rgb),0.35)',
-          maxWidth: '1200px',
-          margin: '0 auto',
         }}>
           {[
             'Exclusive 2 Towers',
@@ -213,8 +203,6 @@ const Hero = ({ setIsOpen }) => {
           borderTop: '1px solid rgba(var(--color-gold-rgb),0.25)',
           boxShadow: isMobile ? 'none' : '0 -10px 40px rgba(7,30,40,0.6)',
           overflow: 'hidden',
-          margin: '0 auto',
-          maxWidth: '1200px',
         }}>
           {[
             { label: 'Status', text: 'New Launch' },
