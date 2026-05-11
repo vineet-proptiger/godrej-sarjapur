@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 import React from "react"
 
 const F_JOST = "var(--font-jost), Montserrat, sans-serif"
@@ -33,7 +33,7 @@ const AboutGodrej = () => (
         style={{
           fontFamily: F_SANS, fontSize: "14.5px",
           color: "#555555", lineHeight: 1.9,
-          margin: "0 0 52px", textAlign: "center",
+          margin: "0 0 52px", textAlign: "justify",
         }}
       >
         Godrej Properties Limited is one of India&apos;s most trusted and celebrated real estate developers, backed by the
