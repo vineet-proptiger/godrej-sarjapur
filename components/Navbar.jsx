@@ -43,8 +43,8 @@ const Navbar = ({ setIsOpen }) => {
     <nav
       className="fixed top-0 left-0 right-0 z-50"
       style={{
-        background: (scrolled || mobileOpen || isMobile) ? 'rgba(13,59,80,0.97)' : 'rgba(13,59,80,0)',
-        borderBottom: (scrolled || mobileOpen || isMobile) ? '1px solid rgba(196,149,42,0.2)' : '1px solid transparent',
+        background: 'rgba(13,59,80,0.97)',
+        borderBottom: '1px solid rgba(196,149,42,0.2)',
         boxShadow: scrolled ? '0 2px 20px rgba(13,59,80,0.5)' : 'none',
         transition: 'background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease',
       }}
@@ -62,10 +62,10 @@ const Navbar = ({ setIsOpen }) => {
               priority
               quality={100}
               style={{
-                height: isMobile ? '72px' : 'clamp(64px, 9vw, 90px)',
+                height: isMobile ? '56px' : 'clamp(48px, 6vw, 72px)',
                 width: 'auto',
                 objectFit: 'contain',
-                maxWidth: '300px',
+                maxWidth: '250px',
               }}
             />
           </a>
